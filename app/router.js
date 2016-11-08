@@ -15,6 +15,8 @@ Router.map(function() {
     this.route('list');
     this.route('new');
     this.route('search');
+    this.route('show', { path: '/show/:event_id' });
+
   });
 
 });

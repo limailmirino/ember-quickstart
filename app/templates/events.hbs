@@ -1,3 +1,11 @@
-<h2>Events navigation</h2>
+<nav class="navbar">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li>{{#link-to 'events.list'}}Last events{{/link-to}}</li>
+      <li>{{#link-to 'events.search'}}Search event{{/link-to}}</li>
+      <li>{{#link-to 'events.new'}}Create a new event{{/link-to}}</li>
+    </ul>
+  </div>
+</nav>
 
 {{outlet}}

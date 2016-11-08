@@ -20,7 +20,18 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    contentSecurityPolicy: {
+          //'style-src': "'self' 'unsafe-inline'",
+          //'script-src': "'self' 'unsafe-eval' 192.168.1.33:35729",
+          'connect-src': "'self' http://localhost:8765"
     }
+
+
+
+
+
   };
 
   if (environment === 'development') {
