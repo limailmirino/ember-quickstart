@@ -1,2 +1,14 @@
-<h1>Fill the form!</h1>
-{{input type="text" value=firstName disabled=entryNotAllowed size="50"}}
+<h3>Insert a new event</h3>
+
+<p><label for="title">Title:</label>{{input type="text" name="title" size="32"}}</p>
+
+<p><label for="location">Location:</label>{{input type="text" name="location" size="32"}}</p>
+
+<p><label for="start">Start date:</label>{{input type="text" name="start" size="32"}}</p>
+
+<p><label for="end">End date:</label>{{input type="text" name="end" size="32"}}</p>
+
+
+{{date-helper "ciao" "world"}}
+{{#map-component}}
+{{/map-component}}
