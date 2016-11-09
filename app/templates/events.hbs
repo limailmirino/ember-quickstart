@@ -1,9 +1,7 @@
-<nav class="navbar">
-  <ul class="nav navbar-nav">
-    <li>{{#link-to 'events.list'}}Last events{{/link-to}}</li>
-    <li>{{#link-to 'events.search'}}Search event{{/link-to}}</li>
-    <li>{{#link-to 'events.new'}}Create a new event{{/link-to}}</li>
-  </ul>
-</nav>
+<p>
+  {{#link-to 'events.list'}}Last events{{/link-to}} |
+  {{#link-to 'events.search'}}Search event{{/link-to}} |
+  {{#link-to 'events.new'}}Create a new event{{/link-to}}
+</p>
 
 {{outlet}}
