@@ -1,16 +1,11 @@
-
 import DS from 'ember-data';
 
 export default DS.Model.extend({
 
-  title: DS.attr('string'),
-  description: DS.attr('string'),
-  location: DS.attr('string'),
+  title: DS.attr('string', {defaultValue: ""}),
+  description: DS.attr('string', {defaultValue: ""}),
+  location: DS.attr('string', {defaultValue: ""}),
   start: DS.attr('date'),
   end: DS.attr('date'),
-  picture: DS.attr('string'),
-  created: DS.attr('date'),
-  updated: DS.attr('date'),
-  tags: DS.attr('string')
-
+  tags: DS.attr('string', {defaultValue: ""})
 });

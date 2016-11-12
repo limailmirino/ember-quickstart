@@ -23,14 +23,16 @@ module.exports = function(environment) {
     },
 
     contentSecurityPolicy: {
-          //'style-src': "'self' 'unsafe-inline'",
-          //'script-src': "'self' 'unsafe-eval' 192.168.1.33:35729",
-          'connect-src': "'self' http://localhost:8765"
+      //'style-src': "'self' 'unsafe-inline'",
+      //'script-src': "'self' 'unsafe-eval' 192.168.1.33:35729",
+      'default-src': "'none'",
+      'font-src': "'self'",
+      'img-src': "'self'",
+      'media-src': "'self'",
+      'style-src': "'self' 'unsafe-inline'",
+      'script-src': "'self' 'unsafe-eval' http://localhost:8765",
+      'connect-src': "'self' http://localhost:8765"
     }
-
-
-
-
 
   };
 
