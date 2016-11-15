@@ -7,7 +7,7 @@ module.exports = function(environment) {
 		title: 'My Sweet App',
 		description: 'This app is sweet',
 		analytics: {
-			google_analytics_id: 'UA-abc123-x',
+			google_analytics_id: 'id-a-caso',
 		},
 
 		modulePrefix: 'ember-quickstart',
