@@ -5,6 +5,9 @@ export default Ember.Route.extend({
 
     return this.store.createRecord('event');
     //return this.store.modelFor('event');
+  },
+  setupController: function(controller, model){
+    controller.set('content', model);
   }
 
 

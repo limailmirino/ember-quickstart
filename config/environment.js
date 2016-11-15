@@ -1,16 +1,27 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
+
   var ENV = {
-    modulePrefix: 'ember-quickstart',
+
+		title: 'My Sweet App',
+		description: 'This app is sweet',
+		analytics: {
+			google_analytics_id: 'UA-abc123-x',
+		},
+
+		modulePrefix: 'ember-quickstart',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
-    EmberENV: {
+
+		EmberENV: {
+
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-      },
+
+			},
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
@@ -20,7 +31,9 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    },
+    }
+
+/*		,
 
     contentSecurityPolicy: {
       //'style-src': "'self' 'unsafe-inline'",
@@ -32,7 +45,7 @@ module.exports = function(environment) {
       'style-src': "'self' 'unsafe-inline'",
       'script-src': "'self' 'unsafe-eval' http://localhost:8765",
       'connect-src': "'self' http://localhost:8765"
-    }
+    }*/
 
   };
 
@@ -58,7 +71,6 @@ module.exports = function(environment) {
   if (environment === 'production') {
 
   }
-
 
   return ENV;
 };
