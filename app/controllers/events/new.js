@@ -10,7 +10,7 @@ export default Ember.Controller.extend({
       console.log("event description: " + form.get('description'));
 
       form.save().then(function() {
-        console.log("Promessa mantenuta");
+        console.log("Store saved to back-end");
 
       }).catch(function(reason) {
 
