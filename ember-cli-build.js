@@ -7,6 +7,11 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
     minifyJS: {
+      //enabled: !!isProduction
+      enabled: false
+    },
+    minifyJS: {
+      //enabled: !!isProduction
       enabled: false
     }
 
