@@ -10,7 +10,7 @@ module.exports = function(defaults) {
       //enabled: !!isProduction
       enabled: false
     },
-    minifyJS: {
+    minifyCss: {
       //enabled: !!isProduction
       enabled: false
     }
