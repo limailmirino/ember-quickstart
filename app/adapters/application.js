@@ -5,10 +5,10 @@ export default DS.RESTAdapter.extend({
   //namespace: 'api',
 
 	// Port 3000 work with Rails as a back-end
-	//host: 'http://localhost:3000',
+	host: 'http://localhost:3000',
 
 	// Port 1337 work with Sails as a back-end
-	host: 'http://localhost:1337',
+	//host: 'http://localhost:1337',
 	primaryKey: '_id'
 	/*
   buildURL: function(modelName, id, snapshot, requestType, query) {
