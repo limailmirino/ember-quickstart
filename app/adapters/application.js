@@ -9,7 +9,7 @@ export default DS.RESTAdapter.extend({
 
 	// Port 1337 work with Sails as a back-end
 	//host: 'http://localhost:1337',
-	primaryKey: '_id'
+	primaryKey: 'id'
 	/*
   buildURL: function(modelName, id, snapshot, requestType, query) {
         var url = this._super(modelName, id, snapshot, requestType, query);

@@ -11,15 +11,18 @@ export default Ember.Controller.extend({
       console.log("Event title: " + event.get('title'));
       console.log("event description: " + event.get('description'));
 
-      event.save().then(function() {
-        console.log("Store saved to back-end");
+      var self = this;
 
-      }).catch(function(reason) {
-
-        console.log(reason);
-      });
-
-      //this.transitionTo('events.list');
+      function transitionToEvent(event) {
+        console.log("OK");
+        self.transitionToRoute('events.show', event);
+      }
+      function failure(reason) {
+        console.log("Problemi durante il salvataggio")
+      }
+      var promise = event.save()
+        .then(transitionToEvent)
+        .catch(failure);
     }
   }
 });
