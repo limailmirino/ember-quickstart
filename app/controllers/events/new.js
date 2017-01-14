@@ -8,8 +8,8 @@ export default Ember.Controller.extend({
       var event  = this.get('model');
 
       console.log("Creating a new event from route");
-      console.log("Event title: " + event.get('title'));
-      console.log("event description: " + event.get('description'));
+      //console.log("Event title: " + event.get('title'));
+      //console.log("event description: " + event.get('description'));
 
       var self = this;
 
