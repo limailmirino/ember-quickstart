@@ -1,0 +1,7 @@
+
+Lista passaggi
+<ul>
+{{#each model as |ride|}}
+<li>{{#link-to 'rides.show' ride}}{{ride.title}}{{/link-to}}</li>
+{{/each}}
+</ul>
