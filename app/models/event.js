@@ -7,5 +7,6 @@ export default DS.Model.extend({
   location: DS.attr('string', {defaultValue: ""}),
   start: DS.attr('date'),
   end: DS.attr('date'),
-  tags: DS.attr('string', {defaultValue: ""})
+  tags: DS.attr('string', {defaultValue: ""}),
+  rides: DS.hasMany('ride')
 });

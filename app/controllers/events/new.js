@@ -3,13 +3,15 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   actions: {
 
-    saveEvent : function(form) {
+    saveEvent : function() {
+
+      var event  = this.get('model');
 
       console.log("Creating a new event from route");
-      console.log("Event title: " + form.get('title'));
-      console.log("event description: " + form.get('description'));
+      console.log("Event title: " + event.get('title'));
+      console.log("event description: " + event.get('description'));
 
-      form.save().then(function() {
+      event.save().then(function() {
         console.log("Store saved to back-end");
 
       }).catch(function(reason) {
@@ -17,7 +19,7 @@ export default Ember.Controller.extend({
         console.log(reason);
       });
 
-      this.transitionTo('events.list');
+      //this.transitionTo('events.list');
     }
   }
 });
