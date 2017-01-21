@@ -8,3 +8,8 @@ footer{
   background-color: #D6DBDF;
   padding: 8px;
 }
+.login-form-container{
+  width: 400px;
+  margin: auto;
+  padding: 40px;
+}
