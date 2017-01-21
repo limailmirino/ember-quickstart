@@ -7,6 +7,8 @@ export default Ember.Controller.extend({
   actions:{
     login: function() {
 
+      let {userName, password} = this.getProperties('username', 'password');
+
       $.post("/login", {
         username: this.get("username"),
         password: this.get("password")

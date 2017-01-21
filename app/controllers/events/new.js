@@ -5,13 +5,13 @@ export default Ember.Controller.extend({
 
     saveEvent : function() {
 
-      var event  = this.get('model');
+      let event  = this.get('model');
 
       console.log("Creating a new event from route");
       //console.log("Event title: " + event.get('title'));
       //console.log("event description: " + event.get('description'));
 
-      var self = this;
+      let self = this;
 
       function transitionToEvent(event) {
         console.log("OK");
@@ -20,7 +20,7 @@ export default Ember.Controller.extend({
       function failure(reason) {
         console.log("Problemi durante il salvataggio")
       }
-      var promise = event.save()
+      let promise = event.save()
         .then(transitionToEvent)
         .catch(failure);
     }
